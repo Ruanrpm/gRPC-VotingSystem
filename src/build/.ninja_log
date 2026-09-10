@@ -1,0 +1,25 @@
+# ninja log v6
+5	3396	8107010133223103	CMakeFiles/voting_proto.dir/generated/votacao.pb.cc.obj	f6840e98516fcdf7
+3321	3591	8107028601916605	voting_server.exe	2cc8fdbb81c1484a
+29	3090	8107028569001183	CMakeFiles/voting_client.dir/client/client.cpp.obj	7ea6f6242d2665f4
+6239	6517	8107010195552020	libvoting_proto.a	a544abe69b0396e2
+24	3321	8107028568951684	CMakeFiles/voting_server.dir/server/server.cpp.obj	6677a8993cac8a99
+11	6238	8107010133273102	CMakeFiles/voting_proto.dir/generated/votacao.grpc.pb.cc.obj	26df1623ead2e093
+3091	3365	8107028599616619	voting_client.exe	a1190b5a1a3b633a
+19	1925	8107039889387854	CMakeFiles/voting_proto.dir/generated/votacao.pb.cc.obj	1edf962f06dea217
+40	3185	8107039889597859	CMakeFiles/voting_client.dir/client/client.cpp.obj	da3346be22ed1ea1
+33	3309	8107039889527854	CMakeFiles/voting_server.dir/server/server.cpp.obj	f65211edf0264c11
+27	3886	8107039889467859	CMakeFiles/voting_proto.dir/generated/votacao.grpc.pb.cc.obj	af7c0adadaa7b88d
+3886	4048	8107039928062037	libvoting_proto.a	a544abe69b0396e2
+4058	4320	8107039929771969	voting_client.exe	fd6dcbf19d21af49
+4048	4323	8107039929681961	voting_server.exe	7a48e30ea5a4cd56
+31	3196	8107045757459289	CMakeFiles/voting_client.dir/client/client.cpp.obj	da3346be22ed1ea1
+24	3440	8107045757389298	CMakeFiles/voting_server.dir/server/server.cpp.obj	f65211edf0264c11
+3197	3470	8107045789112187	voting_client.exe	fd6dcbf19d21af49
+24	283	8107046401887010	voting_server.exe	7a48e30ea5a4cd56
+19	3112	8107048949284678	CMakeFiles/voting_client.dir/client/client.cpp.obj	da3346be22ed1ea1
+3113	3368	8107048980215081	voting_client.exe	fd6dcbf19d21af49
+23	3313	8107053870258494	CMakeFiles/voting_client.dir/client/client.cpp.obj	da3346be22ed1ea1
+3314	3578	8107053903166506	voting_client.exe	fd6dcbf19d21af49
+24	3138	8107057421075815	CMakeFiles/voting_client.dir/client/client.cpp.obj	da3346be22ed1ea1
+3139	3407	8107057452215029	voting_client.exe	fd6dcbf19d21af49

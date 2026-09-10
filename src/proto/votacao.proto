@@ -1,0 +1,67 @@
+syntax = "proto3";
+
+package votacao;
+
+service VotacaoService {
+    rpc ListarCandidatos(ListarCandidatosRequest)
+        returns (ListarCandidatosResponse);
+
+    rpc Votar(VotarRequest)
+        returns (VotarResponse);
+
+    rpc ConsultarResultado(ConsultarResultadoRequest)
+        returns (ConsultarResultadoResponse);
+
+    rpc VerificarEleitor(VerificarEleitorRequest)
+        returns (VerificarEleitorResponse);
+
+    rpc EncerrarVotacao(EncerrarVotacaoRequest)
+        returns (EncerrarVotacaoResponse);
+}
+
+message Candidato {
+    int32 id = 1;
+    string nome = 2;
+    int32 votos = 3;
+}
+
+message ListarCandidatosRequest {
+}
+
+message ListarCandidatosResponse {
+    repeated Candidato candidatos = 1;
+}
+
+message VotarRequest {
+    int32 eleitor_id = 1;
+    int32 candidato_id = 2;
+}
+
+message VotarResponse {
+    bool sucesso = 1;
+    string mensagem = 2;
+}
+
+message ConsultarResultadoRequest {
+}
+
+message ConsultarResultadoResponse {
+    repeated Candidato candidatos = 1;
+    int32 total_votos = 2;
+}
+
+message VerificarEleitorRequest {
+    int32 eleitor_id = 1;
+}
+
+message VerificarEleitorResponse {
+    bool ja_votou = 1;
+}
+
+message EncerrarVotacaoRequest {
+}
+
+message EncerrarVotacaoResponse {
+    bool sucesso = 1;
+    string mensagem = 2;
+}

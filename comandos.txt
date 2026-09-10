@@ -1,0 +1,15 @@
+# COMPILAR
+cmake --build .
+
+# EXECUTAR SERVIDOR
+./voting_server.exe
+
+# EXECUTAR CLIENTE
+./voting_client.exe
+
+# CONFIGURAR O BUILD (se a pasta build estiver vazia)
+cmake .. -G Ninja
+
+# CONFIGURAR + COMPILAR
+cmake .. -G Ninja
+cmake --build .

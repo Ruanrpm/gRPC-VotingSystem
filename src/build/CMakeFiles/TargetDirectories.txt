@@ -1,0 +1,5 @@
+C:/DesktopLocal/Ruan/FACULDADE/ano 3/Semestre 2/SD/gRPC-VotingSystem/src/build/CMakeFiles/voting_proto.dir
+C:/DesktopLocal/Ruan/FACULDADE/ano 3/Semestre 2/SD/gRPC-VotingSystem/src/build/CMakeFiles/voting_server.dir
+C:/DesktopLocal/Ruan/FACULDADE/ano 3/Semestre 2/SD/gRPC-VotingSystem/src/build/CMakeFiles/voting_client.dir
+C:/DesktopLocal/Ruan/FACULDADE/ano 3/Semestre 2/SD/gRPC-VotingSystem/src/build/CMakeFiles/edit_cache.dir
+C:/DesktopLocal/Ruan/FACULDADE/ano 3/Semestre 2/SD/gRPC-VotingSystem/src/build/CMakeFiles/rebuild_cache.dir
