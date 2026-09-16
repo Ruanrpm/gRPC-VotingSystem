@@ -5,14 +5,18 @@ project(VotingSystem LANGUAGES CXX)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-# Localização das bibliotecas instaladas pelo MSYS2 UCRT64
-list(APPEND CMAKE_PREFIX_PATH "C:/msys64/ucrt64")
+# MSYS2 UCRT64
+set(MSYS2_ROOT "C:/msys64/ucrt64")
 
-# Bibliotecas necessárias
+list(APPEND CMAKE_PREFIX_PATH "${MSYS2_ROOT}")
+
 find_package(Protobuf CONFIG REQUIRED)
 find_package(gRPC CONFIG REQUIRED)
 
-# Arquivos gerados pelo protoc
+# =========================
+# PROTOBUF / gRPC
+# =========================
+
 set(PROTO_FILES
     ${CMAKE_CURRENT_SOURCE_DIR}/generated/votacao.pb.cc
     ${CMAKE_CURRENT_SOURCE_DIR}/generated/votacao.grpc.pb.cc
@@ -23,7 +27,6 @@ set(PROTO_HEADERS
     ${CMAKE_CURRENT_SOURCE_DIR}/generated/votacao.grpc.pb.h
 )
 
-# Biblioteca com o código gerado pelo Protobuf/gRPC
 add_library(voting_proto
     ${PROTO_FILES}
     ${PROTO_HEADERS}
@@ -32,6 +35,12 @@ add_library(voting_proto
 target_include_directories(voting_proto
     PUBLIC
         ${CMAKE_CURRENT_SOURCE_DIR}/generated
+        ${MSYS2_ROOT}/include
+)
+
+target_link_directories(voting_proto
+    PUBLIC
+        ${MSYS2_ROOT}/lib
 )
 
 target_link_libraries(voting_proto
